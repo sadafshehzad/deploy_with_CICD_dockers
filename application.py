@@ -4,9 +4,12 @@ from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
 application = Flask(__name__)
 
+
+
 app = application
 
 @app.route('/')
+
 @cross_origin()
 def home_page():
     return render_template('index.html')
